@@ -1,0 +1,35 @@
+print("1. To convert temperature in Celsius to Farhenheit")
+print("2. To convert temperature in Farhenheit to Celsius")
+print("3. To convert temperature in Celsius to Kelvin")
+print("4. To convert temperature in Kelvin to Celsius")
+print("5. To convert temperature in Farhenheit to Kelvin")
+print("6. To convert temperature in Kelvin to Farhenheit")
+
+temp = input()
+
+if temp == "1" :
+    Celsius = input("Enter the temperature: ")
+    print("The Temperature in Farhenheit is" + " " + str(int(Celsius) * 9 / 5 + 32))
+
+elif temp == "2" :
+    Farhenheit = input("Enter the temperature: ")
+    print("The Temperature in Celsius is" + " " + str((int(Farhenheit) - 32) * 5 / 9))
+
+elif temp == "3" :
+    Celsius = input("Enter the temperature: ")
+    print("The temperature in Kelvin is" + " " + str(int(Celsius) + 273))
+
+elif temp == "4" :
+    Kelvin = input("Enter the temperature: ")
+    print("The temperature in Celsius is" + " " + str(int(Kelvin) - 273))
+
+elif temp == "5" :
+    Farhenheit = input("Enter the temperature: ")
+    print("The temperature in Kelvin is" + " " + str(((int(Farhenheit) -32) * 5 / 9) + 273))
+
+elif temp == "6" :
+    Kelvin = input("Enter the temperature: ")
+    print("The temperature in Farhenheit is" + " " + str(((int(Kelvin) - 273) * 9 / 5) + 32))
+
+else :
+    print("The input is invalid")
